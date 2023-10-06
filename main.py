@@ -7,11 +7,20 @@ screen.title("Snake")
 
 starting_positions = [(0, 0), (-20, 0), (-40, 0)]
 
-for position in starting_positions:
-    snake = Turtle("square")
-    snake.color('white')
-    snake.goto(position)
+segments = []
 
+for position in starting_positions:
+    snake_new_segment = Turtle("square")
+    snake_new_segment.color('white')
+    snake_new_segment.penup()
+    snake_new_segment.goto(position)
+    segments.append(snake_new_segment)
+
+
+game_is_on = True
+while game_is_on:
+    for seg in segments:
+        seg.forward(20)
 
 # Instead of the code below, since it's repeated we could use a for look like above ^
 # snake_1 = Turtle("square")
