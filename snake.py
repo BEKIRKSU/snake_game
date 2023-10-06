@@ -39,16 +39,20 @@ class Snake:
         # self.segments[0].left(90)
 
     def up(self):
-        self.head.setheading(UP)
+        if self.head.heading() != DOWN:
+            self.head.setheading(UP)
 
     def down(self):
-        self.head.setheading(DOWN)
+        if self.head.heading() != UP:
+            self.head.setheading(DOWN)
     # pass let's you get rid of errors so you could test your code without empty functions.
 
     def left(self):
-        self.head.setheading(LEFT)
+        if self.head.heading() != RIGHT:
+            self.head.setheading(LEFT)
 
     def right(self):
-        self.head.setheading(RIGHT)
+        if self.head.heading() != LEFT:
+            self.head.setheading(RIGHT)
 #         this could also be (0)
 
