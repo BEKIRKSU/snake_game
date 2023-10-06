@@ -27,4 +27,4 @@ class Snake:
             new_y = self.segments[seg_num - 1].ycor()
             self.segments[seg_num].goto(new_x, new_y)
         self.segments[0].forward(20)
-        self.segments[0].left(90)
+        # self.segments[0].left(90)
