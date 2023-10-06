@@ -12,6 +12,9 @@ class Snake:
     def __init__(self):
         self.segments = []
         self.create_snake()
+        self.head = self.segments[0]
+    #     The self.head attribute is made because self.segments[0] is used frquently, so easier to name
+    # it and use it that way.
 
     def create_snake(self):
         for position in STARTING_POSITIONS:
@@ -28,3 +31,15 @@ class Snake:
             self.segments[seg_num].goto(new_x, new_y)
         self.segments[0].forward(20)
         # self.segments[0].left(90)
+
+    def up(self):
+        self.head.setheading(90)
+
+    def down(self):
+        pass
+    # pass let's you get rid of errors so you could test your code without empty functions.
+    def left(self):
+        self.segments[0].setheading(90)
+    def right(self):
+        pass
+
