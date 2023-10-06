@@ -19,8 +19,8 @@ while game_is_on:
     time.sleep(0.1)
     # for seg_num in range(start= 2, stop= 0, step= -1):
     # for seg_num in range(start= len(segments), stop= 0, step= -1):
-    
-   snake.move()
+
+    snake.move()
 
 
 
