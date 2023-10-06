@@ -46,4 +46,5 @@ class Snake:
 
     def right(self):
         self.head.setheading(360)
+#         this could also be (0)
 
