@@ -1,6 +1,10 @@
 from turtle import Turtle
 STARTING_POSITIONS = [(0,0), (-20,0), (-40, 0)]
 MOVE_DISTANCE = 20
+UP = 90
+DOWN = 270
+LEFT = 180
+RIGHT = 360
 # Constants are in capital letters and snake casing. They're useful because you won't
 # need to dig around the entire body of the code to amend code, you can just change the const at the
 # top of the page.
@@ -35,16 +39,16 @@ class Snake:
         # self.segments[0].left(90)
 
     def up(self):
-        self.head.setheading(90)
+        self.head.setheading(UP)
 
     def down(self):
-        self.head.setheading(270)
+        self.head.setheading(DOWN)
     # pass let's you get rid of errors so you could test your code without empty functions.
 
     def left(self):
-        self.head.setheading(180)
+        self.head.setheading(LEFT)
 
     def right(self):
-        self.head.setheading(360)
+        self.head.setheading(RIGHT)
 #         this could also be (0)
 
