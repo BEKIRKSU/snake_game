@@ -2,20 +2,18 @@ from turtle import Turtle, Screen
 
 screen = Screen()
 screen.setup(width=600, height=600)
+screen.bgcolor("black")
+screen.title("Snake")
 
-
-starting_positions= [(0, 0), (-20, 0), (-40, 0)]
+starting_positions = [(0, 0), (-20, 0), (-40, 0)]
 
 for position in starting_positions:
-    new_snake_piece = Turtle("square")
-    new_snake_piece.color('white')
-    new_snake_piece.goto(position)
+    snake = Turtle("square")
+    snake.color('white')
+    snake.goto(position)
 
 
 # Instead of the code below, since it's repeated we could use a for look like above ^
-# screen.bgcolor("black")
-# screen.title("Snake")
-#
 # snake_1 = Turtle("square")
 # snake_1.color("white")
 #
