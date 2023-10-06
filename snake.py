@@ -5,6 +5,8 @@ MOVE_DISTANCE = 20
 # need to dig around the entire body of the code to amend code, you can just change the const at the
 # top of the page.
 
+
+# All we're doing here is creating a snake and making it move.
 class Snake:
 
     def __init__(self):

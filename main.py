@@ -2,6 +2,9 @@ from turtle import Turtle, Screen
 from snake import Snake
 import time
 
+# All we're doing here is creating a screen. importing the snake and it's movement and
+# adding a gams_is_on + while loop to it.
+
 screen = Screen()
 screen.setup(width=600, height=600)
 screen.bgcolor("black")
