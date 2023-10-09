@@ -4,6 +4,8 @@ from food import Food
 from scoreboard import Scoreboard
 import time
 
+# IMPROVE THE DESIGN
+
 # All we're doing here is creating a screen. importing the snake and it's movement and
 # adding a gams_is_on + while loop to it.
 
