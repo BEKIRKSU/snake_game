@@ -33,6 +33,9 @@ while game_is_on:
     # for seg_num in range(start= len(segments), stop= 0, step= -1):
 
     snake.move()
+#     After we have what we have so far, we detect the collision with food.
+    if snake.head.distance(food) < 15:
+        print("hhahah")
 
 
 
