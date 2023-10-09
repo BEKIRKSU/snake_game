@@ -24,12 +24,18 @@ class Snake:
 
     def create_snake(self):
         for position in STARTING_POSITIONS:
-            snake_new_segment = Turtle("square")
-            snake_new_segment.color('white')
-            # snake_new_segment.shapesize(stretch_wid=0.5, stretch_len=1)
-            snake_new_segment.penup()
-            snake_new_segment.goto(position)
-            self.segments.append(snake_new_segment)
+            self.add_segment(position)
+
+    def add_segment(self, position):
+        snake_new_segment = Turtle("square")
+        snake_new_segment.color('white')
+        # snake_new_segment.shapesize(stretch_wid=0.5, stretch_len=1)
+        snake_new_segment.penup()
+        snake_new_segment.goto(position)
+        self.segments.append(snake_new_segment)
+
+    def extend(self):
+        self.add_segment(self.segments[-1].position())
 
     def move(self):
         for seg_num in range(len(self.segments) - 1, 0, -1):
@@ -56,4 +62,6 @@ class Snake:
         if self.head.heading() != LEFT:
             self.head.setheading(RIGHT)
 #         this could also be (0)
+
+# There are errors. When back is pressed when going forward the game ends. 
 

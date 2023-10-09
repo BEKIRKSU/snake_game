@@ -38,11 +38,21 @@ while game_is_on:
 #     After we have what we have so far, we detect the collision with food.
     if snake.head.distance(food) < 15:
         food.refresh()
+        snake.extend()
         scoreboard.increase_score()
 
-    if snake.head.xcor() > 280 or snake.head.xcor() < -280 or snake.head.ycor() > 280 or snake.head.ycor() < -280:
+
+    if snake.head.xcor() > 285 or snake.head.xcor() < -285 or snake.head.ycor() > 270 or snake.head.ycor() < -285:
         game_is_on = False
         scoreboard.game_over()
+
+#     For collision of head and any segment of tail should = game over.
+    for segment in snake.segments:
+        if segment == snake.head:
+            pass
+        elif snake.head.distance(segment) < 10:
+            game_is_on = False
+            scoreboard.game_over()
 
 
 
@@ -57,7 +67,6 @@ while game_is_on:
 # snake_3 = Turtle("square")
 # snake_3.color("white")
 # snake_3.goto(-40, 0)
-
 
 
 screen.exitonclick()
