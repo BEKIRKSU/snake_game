@@ -21,3 +21,5 @@ class Scoreboard(Turtle):
         self.clear()
         self.update_scoreboard()
 
+# Functions are made to clean up any duplicate in code. Constants are made to
+# clean the look of the code and to be able to alter the constant without going through the code body
