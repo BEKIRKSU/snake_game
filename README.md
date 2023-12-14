@@ -24,4 +24,4 @@ This simple yet entertaining Snake Game is designed to showcase the fun side of 
 **Installation:**
 1. Clone the repository.
    ```bash
-   git clone https://github.com/your-username/snake-game.git
+   git clone https://github.com/your-username/snake_game.git
