@@ -18,10 +18,3 @@ This simple yet entertaining Snake Game is designed to showcase the fun side of 
 4. Avoid collisions with the game border and the snake itself.
 5. Have fun and challenge yourself to achieve the highest score!
 
-**Requirements:**
-- Python 3.x
-
-**Installation:**
-1. Clone the repository.
-   ```bash
-   git clone https://github.com/your-username/snake-game.git
